@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCGTeach - Hệ thống học tập thông minh</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>DCGTeach - Hệ thống học tập</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,49 +25,74 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-wrapper">
-            <div class="hero-content">
-                <h1>Học tập thông minh cùng <br><span>DCGTeach</span></h1>
-                <p>Khám phá kho tri thức không giới hạn với lộ trình cá nhân hóa dành riêng cho bạn.</p>
-                
-                <div class="search-container">
-                    <input type="text" placeholder="Bạn muốn học gì hôm nay?">
-                    <button><i class="fas fa-search"></i> Tìm kiếm</button>
+    <main>
+        <section class="hero">
+            <div class="container hero-wrapper">
+                <div class="hero-content">
+                    <h1>Học tập cùng <br><span>DCGTeach</span></h1>
+                    <p>Khám phá kho tri thức không giới hạn với lộ trình cá nhân hóa dành riêng cho bạn.</p>
+                    
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Bạn muốn học gì hôm nay?">
+                        <button>Tìm kiếm</button>
+                    </div>
                 </div>
-
-                <div class="hero-stats">
-                    <div class="stat-pill"><b>1,500+</b> Bài giảng</div>
-                    <div class="stat-pill"><b>10k+</b> Học viên</div>
-                    <div class="stat-pill"><b>24/7</b> Hỗ trợ</div>
+                <div class="hero-image">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-learning-4437039-3684719.png" alt="Learning Illustration">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-learning-4437039-3684719.png" alt="Learning Illustration">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="courses container">
-        <h2 class="section-title">Khóa học tiêu biểu</h2>
-        <div class="course-grid">
-            <div class="course-card">
-                <div class="card-img" style="background-image: url('https://img.freepik.com/free-vector/coding-concept-illustration_114360-1025.jpg');"></div>
-                <div class="card-body">
-                    <span class="tag">Công nghệ</span>
-                    <h3>Lập trình Web cơ bản</h3>
-                    <p><i class="far fa-play-circle"></i> 24 bài học</p>
-                    <div class="card-footer">
-                        <span class="rating"><i class="fas fa-star"></i> 5.0</span>
-                        <button class="btn-outline">Xem chi tiết</button>
+        <section class="courses container">
+            <h2 class="section-title">Khóa học dành cho bạn</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="card-img" style="background-image: url('https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-design-technology-browsing-software-structure-concept-process-vector-flat-illustration_1150-64453.jpg');"></div>
+                    <div class="card-body">
+                        <span class="tag">Lập trình</span>
+                        <h3>Phát triển Web toàn diện</h3>
+                        <p><i class="far fa-clock"></i> 32 giờ học • 45 bài giảng</p>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                            <button class="btn-outline">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-img" style="background-image: url('https://img.freepik.com/free-vector/ux-ui-design-concept-with-tablet_23-2147854611.jpg');"></div>
+                    <div class="card-body">
+                        <span class="tag">Thiết kế</span>
+                        <h3>Thiết kế giao diện UI/UX</h3>
+                        <p><i class="far fa-clock"></i> 20 giờ học • 28 bài giảng</p>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+                            <button class="btn-outline">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-img" style="background-image: url('https://img.freepik.com/free-vector/data-analysis-concept-illustration_114360-1201.jpg');"></div>
+                    <div class="card-body">
+                        <span class="tag">Dữ liệu</span>
+                        <h3>Phân tích dữ liệu cơ bản</h3>
+                        <p><i class="far fa-clock"></i> 15 giờ học • 20 bài giảng</p>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            <button class="btn-outline">Xem thêm</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 DCGTeach Learning System. Mang đến tri thức cho mọi người.</p>
+        <div class="container">
+            <p>&copy; 2026 <strong>DCGTeach</strong>. Hệ thống quản lý học tập trực tuyến.</p>
+        </div>
     </footer>
 
 </body>
