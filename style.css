@@ -1,9 +1,9 @@
 :root {
-    --primary-blue: #1E88E5;      /* Xanh dương chính */
-    --hover-blue: #1565C0;        /* Xanh dương khi hover */
-    --light-bg: #F0F7FF;          /* Nền xanh nhạt dịu mắt */
-    --text-dark: #263238;         /* Màu chữ tiêu đề */
-    --text-gray: #607D8B;         /* Màu chữ phụ */
+    --primary-blue: #1E88E5;
+    --hover-blue: #1565C0;
+    --light-bg: #F0F7FF;
+    --text-dark: #263238;
+    --text-gray: #607D8B;
     --white: #FFFFFF;
     --radius: 12px;
 }
@@ -18,7 +18,6 @@
 body {
     background-color: #FBFCFE;
     color: var(--text-dark);
-    line-height: 1.6;
 }
 
 .container {
@@ -27,7 +26,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
 header {
     background: var(--white);
     padding: 18px 0;
@@ -50,30 +48,12 @@ header {
     font-size: 26px;
     font-weight: 800;
     color: var(--primary-blue);
-    cursor: pointer;
 }
 
-.logo span span {
-    color: var(--text-dark);
-}
+.logo span span { color: var(--text-dark); }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 600;
-    font-size: 15px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: var(--primary-blue);
-}
+nav { display: flex; align-items: center; gap: 30px; }
+nav a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 15px; }
 
 .btn-login {
     background: var(--primary-blue);
@@ -83,187 +63,86 @@ nav a:hover {
     border-radius: var(--radius);
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.btn-login:hover {
-    background: var(--hover-blue);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
-}
+.btn-login:hover { background: var(--hover-blue); }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(180deg, var(--light-bg) 0%, #FFFFFF 100%);
-    padding: 100px 0;
-    border-radius: 0 0 60px 60px;
+    padding: 80px 0;
 }
 
-.hero-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
+.hero-wrapper { display: flex; align-items: center; gap: 40px; }
+.hero-content h1 { font-size: 52px; font-weight: 800; margin-bottom: 20px; }
+.hero-content h1 span { color: var(--primary-blue); }
+.hero-content p { font-size: 18px; color: var(--text-gray); margin-bottom: 35px; }
 
-.hero-content {
-    flex: 1;
-}
-
-.hero-content h1 {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.hero-content h1 span {
-    color: var(--primary-blue);
-}
-
-.hero-content p {
-    font-size: 19px;
-    color: var(--text-gray);
-    margin-bottom: 40px;
-    max-width: 500px;
-}
-
-/* Search Bar */
 .search-container {
     display: flex;
     align-items: center;
     background: var(--white);
-    padding: 10px;
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #E1E8ED;
 }
 
-.search-icon {
-    margin-left: 15px;
-    color: var(--text-gray);
-}
-
-.search-container input {
-    flex: 1;
-    border: none;
-    padding: 15px;
-    outline: none;
-    font-size: 16px;
-}
-
+.search-icon { margin-left: 15px; color: var(--text-gray); }
+.search-container input { flex: 1; border: none; padding: 12px; outline: none; font-size: 16px; }
 .search-container button {
     background: var(--primary-blue);
     color: var(--white);
     border: none;
-    padding: 15px 35px;
-    border-radius: 15px;
+    padding: 12px 25px;
+    border-radius: 12px;
     font-weight: 700;
-    cursor: pointer;
 }
 
-.hero-image {
-    flex: 1;
-    text-align: right;
-}
+.hero-image img { width: 100%; height: auto; }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Courses Section */
-.courses {
-    padding: 80px 0;
-}
-
-.section-title {
-    font-size: 32px;
-    margin-bottom: 40px;
-    font-weight: 800;
-}
-
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
-}
+.courses { padding: 80px 0; }
+.section-title { font-size: 32px; margin-bottom: 40px; font-weight: 800; }
+.course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
 
 .course-card {
     background: var(--white);
     border-radius: var(--radius);
     border: 1px solid #F0F0F0;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-.card-img {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-.card-body {
-    padding: 25px;
-}
+.course-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.card-img { height: 180px; background-size: cover; background-position: center; }
+.card-body { padding: 20px; }
 
 .tag {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: var(--primary-blue);
     background: var(--light-bg);
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 6px;
-    text-transform: uppercase;
-}
-
-.card-body h3 {
-    margin: 15px 0 10px;
-    font-size: 20px;
-}
-
-.card-body p {
-    color: var(--text-gray);
-    font-size: 14px;
 }
 
 .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #F5F5F5;
-}
-
-.rating {
-    color: #FFB300;
-    font-weight: 700;
 }
 
 .btn-outline {
     background: transparent;
     border: 2px solid var(--primary-blue);
     color: var(--primary-blue);
-    padding: 8px 20px;
-    border-radius: 10px;
+    padding: 6px 15px;
+    border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.btn-outline:hover {
-    background: var(--primary-blue);
-    color: var(--white);
-}
-
-footer {
-    padding: 50px 0;
-    text-align: center;
-    border-top: 1px solid #F0F0F0;
-    color: var(--text-gray);
-}
+footer { padding: 40px 0; text-align: center; color: var(--text-gray); }
