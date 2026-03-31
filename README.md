@@ -1,1 +1,1 @@
-# DCGTeach
+# DCGLearn
